@@ -74,6 +74,14 @@ body {
   background-color: rgb(252, 96, 40);
 }
 
+.rating-card .rates .rate-number.active {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.rating-card .rates .rate-number.active p {
+  color: white;
+}
+
 .rating-card .rates .rate-number:hover p {
   color: white;
 }
@@ -107,6 +115,4 @@ body {
   display: none;
 }
 
-.active {
-  background-color: white;
-}
+
