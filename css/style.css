@@ -1,0 +1,112 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+.rating-card {
+  width: 400px;
+  background-color: hsl(213, 19%, 18%);
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 450px) {
+  .rating-card {
+    max-width: 85%;
+  }
+}
+
+.rating-card .star {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(214, 17%, 27%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-card h2 {
+  color: white;
+  margin: 20px 0;
+}
+
+.rating-card p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.4;
+}
+
+.rating-card .rates {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-card .rates .rate-number {
+  color: hsl(217, 12%, 63%);
+  width: 50px;
+  height: 50px;
+  background-color: hsl(214, 17%, 27%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .rating-card .rates .rate-number {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.rating-card .rates .rate-number:hover {
+  background-color: rgb(252, 96, 40);
+}
+
+.rating-card .rates .rate-number:hover p {
+  color: white;
+}
+
+.rating-card input {
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: rgb(252, 96, 40);
+  cursor: pointer;
+}
+
+.rating-card input:hover {
+  color: rgb(252, 96, 40);
+  background-color: white;
+}
+
+/* //////////////// THANK YOU CARD ///////////////// */
+
+.thankyou-content {
+  text-align: center;
+}
+
+.thankyou-content .selected-rate-text {
+  margin: 15px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: white;
+}
